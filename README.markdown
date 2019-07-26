@@ -343,6 +343,10 @@ Avoid block comments inline with code, as the code should be as self-documenting
 
 Avoid the use of C-style comments (`/* ... */`). Prefer the use of double- or triple-slash.
 
+### Warnings
+
+Snaappy: use warnings as reminder of missing localization key, method or resourse. Place **#warning("localization:"), #warning("method:"), etc** with simple description right before the line, where it is expected.
+
 ## Classes and Structures
 
 ### Which one to use?

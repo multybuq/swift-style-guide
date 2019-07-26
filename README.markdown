@@ -21,6 +21,7 @@ Our overarching goals are clarity, consistency and brevity, in that order.
   * [Minimal Imports](#minimal-imports)
 * [Spacing](#spacing)
 * [Comments](#comments)
+  * [Warnings](#warnings)
 * [Classes and Structures](#classes-and-structures)
   * [Use of Self](#use-of-self)
   * [Protocol Conformance](#protocol-conformance)

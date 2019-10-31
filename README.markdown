@@ -52,6 +52,8 @@ Our overarching goals are clarity, consistency and brevity, in that order.
 * [Organization and Bundle Identifier](#organization-and-bundle-identifier)
 * [Copyright Statement](#copyright-statement)
 * [Smiley Face](#smiley-face)
+* [Code Base](#code-base)
+  * [UICollectionView](#uicollectionview)
 * [References](#references)
 
 
@@ -1110,6 +1112,22 @@ Smiley faces are a very prominent style feature of the [raywenderlich.com](https
 **Not Preferred**:
 ```
 :)
+```
+## Code Base
+### UICollectionView
+
+If its needed to indicate empty collection view, use UICollectionView's background view property. Modify this property within collection view's datasource method, so it will always fit actual state. 
+
+**Preferred**:
+```
+func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+     if (self.data.count == 0) {
+         collectionView.backgroundView = [view]
+     } else {
+         collectionView.backgroundView = nil
+     }
+     return self.data.count
+}
 ```
 
 ## References
